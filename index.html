@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div class="containter-fluid">
+        <div class="row justify-content-center">
+            <h1>Grocery Store</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-4 bg-dark text-light">
+                <div class="row justify-content-center">
+                    <h2>Items For Sale</h2>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Filter By Category
+                        <span class="cart"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" id="all" value="all">Show All</a></li>
+                        <li><a href="#" class="produce" value="produce">Hide Produce</a></li>
+                        <li><a href="#" id="meat" value="meat">Hide Meats</a></li>
+                        <li><a href="#" id="dry" value="dry">Hide Dry Goods</a></li>
+                        <li><a href="#" id="deli" value="deli">Hide Deli Goods</a></li>
+                    </ul>
+                </div>
+                <div class="justify-content-center" id="listCat">
+                </div>
+            </div>
+            <div class="col-sm-4 bg-light">
+                <div class="row justify-content-center">
+                    <h2>Shopping Cart</h2>
+                </div>
+                <button id="clearCart" class="btn-info">Empty Cart</button>
+                <div class="row" id="listCart">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    <script src='./assets/javascript/index.js'></script>
+    
+</body>
+
+</html>
